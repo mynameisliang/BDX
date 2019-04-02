@@ -1,0 +1,23 @@
+/*body { margin: 0px; padding: 0px; background-color: #005388; font-family: 'Lato', sans-serif; }*/
+/*h1 { margin: 2em 0px; padding: 0px; color: #fff; text-align: center; font-weight: 100; font-size: 50px; }*/
+#m_lists { float: left; width: 360px;heigh:200px}
+#m_names{
+	float: right;
+}
+#m_grps{
+	float: left;
+}
+ul { margin: 0px; padding: 0px; list-style: none; float: right;}
+ul.dropdown { position: relative; width: 100%; }
+ul.dropdown li { font-weight: bold;  width: 180px; position: relative; background: #dcffb4;float: left;}
+/*ul.dropdown a:hover { color: #00ff00; }*/
+ul.dropdown li a { display: block; padding: 20px 8px; color: #00ff00; position: relative; z-index: 2000; text-align: center; text-decoration: none; font-weight: 300; }
+ul.dropdown li a:hover, ul.dropdown li a.hover { background: #00ff00; position: relative; color: #fff; }
+
+ul.dropdown ul { display: none; position: absolute; top: 0; left: 0; width: 180px; z-index: 1000; }
+ul.dropdown ul li { font-weight: normal; background: #dcffb4; color: #000; border-bottom: 1px solid #fff; }
+ul.dropdown ul li a { display: block; color: #00ff00 !important; background: #dcffb4 !important; }
+ul.dropdown ul li a:hover { display: block; background: #00ff00 !important; color: #fff !important; }
+.drop > a { position: relative; }
+.drop > a:after { content: ""; position: absolute; right: 10px; top: 40%; border-left: 5px solid transparent; border-top: 5px solid #333; border-right: 5px solid transparent; z-index: 999; }
+.drop > a:hover:after { content: ""; border-left: 5px solid transparent; border-top: 5px solid #fff; border-right: 5px solid transparent; }

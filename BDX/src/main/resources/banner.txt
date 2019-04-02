@@ -1,0 +1,8 @@
+${AnsiColor.BRIGHT_MAGENTA}
+   _/_/_/    _/_/_/    _/      _/   北${AnsiColor.BLUE}
+   _/    _/  _/    _/    _/  _/    斗${AnsiColor.BRIGHT_GREEN}
+  _/_/_/    _/    _/      _/      星${AnsiColor.BRIGHT_YELLOW}
+ _/    _/  _/    _/    _/  _/    项${AnsiColor.RED}
+_/_/_/    _/_/_/    _/      _/  目
+${AnsiColor.BRIGHT_CYAN}
+::: Project (version:${application.version}) :::    ＼(^O^)／    Spring-Boot ${spring-boot.version}

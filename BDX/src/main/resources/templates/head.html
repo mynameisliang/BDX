@@ -1,0 +1,96 @@
+<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" th:href="@{/css/head.css}" />
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/tools.js}"></script>
+		<script type="text/javascript" th:src="@{/js/load.js}" ></script>
+	</head>
+	<body>
+		 <div id='head' class="row">
+		 	<div id='logo' class="row">
+		 		<div id='img'></div>
+		 		<div id='login'>
+		 			<div id='licence' hidden="hidden">
+		 				<form>
+		 					<label for="number">学号</label>
+		 					<input type="text" id='number'/><br />
+		 					<label for="password">密码</label>
+		 					<input type="password" id='password'/><br />
+		 					<input type="button" value="登录" id='submit'/>
+		 					<input type="button" value="取消" id='cancle'/>
+		 				</form>
+		 			</div>
+		 			<div id='key'>登录/Login</div>
+		 		</div>
+		 		<div id='logging' hidden="hidden">认证ing……</div>
+		 		<div id='logged' hidden="hidden"></div>
+		 	</div>
+		 	<div id='href' class="row">
+		 		<table id='hreftable'>
+		 			<tr>
+<<<<<<< HEAD
+		 				<td id='home' class="href"><a href="/index">主页</a></td>
+		 				<td id='show' class="href"><a href="/ProShare">项目展示</a></td>
+		 				<td id='way' class="href"><a href="/Direction">学习路线</a></td>
+		 				<td id='share' class="href"><a href="/TecShare">技术分享</a></td>
+		 				<td id='board' class="href"><a href="/Message">留言板</a></td>
+		 				<td id='about' class="href"><a href="/About">关于我们</a></td>
+		 				<td id='more' class="href"><a href="/More">More……</a></td>
+=======
+		 				<td id='home' class="href"><a href="/page/index">主页</a></td>
+		 				<td id='show' class="href"><a href="/page/ProShare">项目展示</a></td>
+		 				<td id='way' class="href"><a href="/page/Direction">学习路线</a></td>
+		 				<td id='share' class="href"><a href="/page/TecShare">技术分享</a></td>
+		 				<td id='board' class="href"><a href="/page/Message">留言板</a></td>
+		 				<td id='about' class="href"><a href="/page/About">关于我们</a></td>
+		 				<td id='more' class="href"><a href="/page/More">More……</a></td>
+>>>>>>> 8f89842b699bc3201b5977707684fb19693f46c8
+		 			</tr>
+		 		</table>
+		 	</div>
+		 	<div id='select' class="row" hidden="hidden">
+		 		<table id='selecttable'>
+		 			<tr>
+		 				<td id='homes' class="select">
+		 					<div><a href="#news">新闻动态</a></div>
+		 					<div><a href="#rules">管理制度</a></div>
+		 				</td>
+		 				<td id='shows' class="select">
+		 					<div><a href="#countryField">国家项目</a></div>
+		 					<div><a href="#provinceField">省内项目</a></div>
+		 					<div><a href="#otherField">其他项目</a></div>
+		 				</td>
+		 				<td id='ways' class="select">
+		 					<div><a href="#javaWay">Java</a></div>
+		 					<div><a href="#PythonWay">Python</a></div>
+		 					<div><a href="#BeautyWay">美工</a></div>
+		 				</td>
+		 				<td id='shares' class="select">
+		 					<div><a href="#javaTec">Java</a></div>
+		 					<div><a href="#pythonTec">Python</a></div>
+		 					<div><a href="#linuxTec">Linux</a></div>
+		 				</td>
+		 				<td id='boards' class="select">
+		 					<div><a href="#messages">已有留言</a></div>
+		 					<div><a href="#addMessage">写留言</a></div>
+		 				</td>
+		 				<td id='contacts' class="select">
+		 					<div><a href="#introduce">我们的介绍</a></div>
+		 					<div><a href="#teamCulture">团队文化</a></div>
+		 					<div><a href="#contactUs">联系我们</a></div>
+		 					<div><a href="#joinUs">申请加入</a></div>
+		 				</td>
+		 				<td id='mores' class="select">
+		 					<div><a href="#signIn">签到</a></div>
+		 					<div><a href="#me">我</a></div>
+		 				</td>
+		 			</tr>
+		 		</table>
+		 	</div>
+		</div>
+	</body>
+</html>

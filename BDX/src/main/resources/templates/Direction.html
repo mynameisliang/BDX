@@ -1,0 +1,48 @@
+<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>学习路线 - 北斗星工作室</title>
+		<!--<link rel="stylesheet" href="css/main.css" />-->
+		<link rel="stylesheet" th:href="@{/css/direction.css}" />
+		<link rel="icon" th:href="@{/img/compass.ico}">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="js/tools.js"></script>-->
+		<script type="text/javascript" th:src="@{/js/base.js}" ></script>
+		<script type="text/javascript" th:src="@{/js/direction.js}" ></script>
+	</head>
+	<body>
+        <div id='head' class="row" th:include="head"></div>
+		<div id='body' class="row">
+		 	<div id='JavaWay' class="Outbox">
+		 		<div class="border"></div>
+		 		<div class="introduce">
+		 			&emsp;&emsp;JAVA方向<br/>Java语言基础——Java面向对象 ——JDK核心API—— JavaSE —— 
+		 			数据库MySQL —— JDBC —— XML —— HTML-CSS-JavaScript —— 
+		 			Servlet -Jsp-Ajax ——Struts2-Hibernate-Spring
+		 		</div>
+		 		<div class="logo"></div>
+		 	</div>
+		 	<div id='PythonWay' class="Outbox">
+		 		<div class="border"></div>
+		 		<div class="introduce">
+		 			&emsp;&emsp;PYTHON方向<br/>Python快速入门--初级教程--Python RESTful API开发--
+		 			定向爬虫入门--Django开发与进阶--Flask实战-- Linux从入门到精通
+		 			--Apache课程--MySQL课程
+		 		</div>
+		 		<div class="logo"></div>
+		 	</div>
+		 	<div id='BeautyWay' class="Outbox">
+		 		<div class="border"></div>
+		 		<div class="introduce">
+		 			&emsp;&emsp;美工方向<br/>第一阶段--Java基础;第二阶段--Web基础;第三阶段--JavaWeb;
+		 			美工课程：Photoshop CS、Dreamweaver、Flash、Fir-eworks
+		 			等网页设计软件以及div+css、页面策划、页面色彩与布局等 
+		 		</div>
+		 		<div class="logo"></div>
+		 	</div>
+		</div>
+        <div id='foot' class="row" th:include="foot :: copyright" ></div>
+	</body>
+</html>

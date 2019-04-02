@@ -1,0 +1,53 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.9.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+//apply plugin: 'war'
+//
+//war{
+//    baseName ="bdx"
+//    version="0.0.1-SHAPSHOT"
+//}
+
+group = 'cn.itscloudy'
+version = '0.5'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+    //解决Thymeleaf过渡严格的检查，在application.yml中配置
+	compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.13'
+    //开启Actuator
+	compile "org.springframework.boot:spring-boot-starter-actuator"
+    //开启远程Shell
+//    compile "org.springframework.boot:spring-boot-starter-remote-shell"
+	//开启安全验证
+	compile "org.springframework.boot:spring-boot-starter-security"
+////	Gorm
+//	compile "org.grails:gorm-hibernate4-spring-boot:1.1.0.RELEASE"
+	//Json
+//	compile 'net.sf.json-lib:json-lib:2.4'
+	compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	runtime('mysql:mysql-connector-java')
+
+//    providedCompile("org.springframework.boot:spring-boot-starter-tomcat")
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}

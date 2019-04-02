@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>北斗星工作室</title>
+		<!--<link rel="stylesheet" th:href="@{/css/main.css}" />-->
+		<link rel="stylesheet" th:href="@{/css/index.css}" />
+		<link rel="icon" th:href="@{/img/compass.ico}">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/tools.js}"></script>
+		<script type="text/javascript" th:src="@{/js/base.js}" ></script>
+		<script type="text/javascript" th:src="@{/js/index.js}" ></script>
+	</head>
+	<body>
+		<div id='news_page' class="Dark">
+			<article id='newsDetail' class="Detail"></article>
+			&emsp;[点击空白退出]
+		</div>
+		<div id='head' class="row" th:include="head"></div>
+		<div id='body' class="row">
+		 	<div id='mainImg'>
+		 		<p id='banner'>
+		 			&emsp;迢迢暗夜<br />
+		 			<!-- nbsp1/4汉字  ensp1/2汉字 emsp1汉字-->
+		 			&emsp;&emsp;望一柄北斗为我们引路<br />
+		 			&emsp;&emsp;&emsp;茫茫雾海<br />
+		 			&emsp;&emsp;&emsp;&emsp;燃一盏心灯为我们导航
+		 		</p>
+		 	</div>
+		 	<div id='news'>
+		 		<div id='newsTitle' class="title">新闻动态</div>
+		 		<div id='scroller'>
+		 			<div class="newsPanel">
+			 			<div class="newsItem">
+			 				<div class="back_scroll"></div>
+			 				<div class="titleNews">devide</div>
+			 				<div hidden="hidden" class="news_id">devide</div>
+			 			</div>
+			 		</div>
+		 		</div>
+		 		<div id='turnLeft' class="turn">上一页</div>
+		 		<div id='pageSign'>第1页</div>
+		 		<div id='turnRight' class="turn">下一页</div>
+		 	</div>
+		 	<div id='rules'>
+		 		<div id='rulesTitle' class="title">管理制度</div>
+		 		<div id='rulesContent'>
+		 			<!--<dl>
+		 				<dt>安全管理</dt>
+		 				<dd>A</dd>
+		 				<dt>卫生安排</dt>
+		 				<dd>B</dd>
+		 				<dt>会议安排</dt>
+		 				<dd>C</dd>
+		 				<dt>管理方案</dt>
+		 				<dd>E</dd>
+		 				<dt>考核制度</dt>
+		 				<dd>F</dd>
+		 				<dt>指导人员</dt>
+		 				<dd>G</dd>
+		 			</dl>-->
+		 		</div>
+		 	</div>
+		</div>
+		<div id='foot' class="row" th:include="foot :: copyright" ></div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>更多内容 - 北斗星工作室</title>
+		<link rel="stylesheet" th:href="@{/css/more.css}" />
+		<link rel="icon" th:href="@{/img/compass.ico}">
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <script type="text/javascript" th:src="@{/js/tools.js}"></script>
+        <script type="text/javascript" th:src="@{/js/base.js}" ></script>
+        <script type="text/javascript" th:src="@{/js/signDetail.js}"></script>
+        <script type="text/javascript" th:src="@{/js/me.js}" ></script>
+        <script type="text/javascript" th:src="@{/js/calendar.js}" ></script>
+	</head>
+	<body>
+		<div id='modify_pass_html' class="Dark">
+			<form>
+				<input type="password" id='new-pass' /><p>新密码</p><p class="errorAlert"></p>
+				<input type="password" id='repeat' /><p>再次输入</p><p class="errorAlert"></p><br />
+				<input type="button" id='modify_pass_submit' value="确定" />
+				<input type="button" id='modify_pass_cancle' value="取消" />
+			</form>
+		</div>
+        <div id='head' class="row" th:include="head"></div>
+		<div id='body' class="row">
+		 	<div id='signIn'>
+		 		<table id='calendar'>
+		 			<tr>
+		 				<td id='calendarTitle'>
+		 					<div id='turnLeft' class="inTurn"></div>
+		 					<div id='dateShow' class="inTitle"></div>
+		 					<div id='turnRight' class="inTurn"></div>
+		 				</td>
+		 			</tr>
+		 			<tr>
+		 				<td id='content'></td>
+		 			</tr>
+		 		</table>
+		 		<div id='detail'>
+		 			<div id='words' class="inDetail">
+		 				<div id='signButton' class="detailTitle"></div>
+		 				<div class='detail'>TEST</div>
+		 			</div>
+		 			<div id='todaySign' class="inDetail">
+		 				<div class="detailTitle">日签到：</div>
+		 				<div class='detail'>TEST</div>
+		 			</div>
+		 			<div id='monthSign' class="inDetail">
+		 				<div class="detailTitle">月签到：</div>
+		 				<div class='detail'>TEST</div>
+		 			</div>
+		 			<div id='fullSigns' class="inDetail">
+		 				<div class="detailTitle"></div>
+		 				<div class='detail'>记得签到和签退！</div>
+		 			</div>
+		 			<div id='UnlogedAlert' hidden='hidden' class='UniversalAlert'><a href='#head'>登录</a>后才能执行操作</div>
+		 		</div>
+		 	</div>
+		 	<div id='me'>
+		 		<div id='border-top' class="meBoder"></div>
+				<div class='UniversalAlert' hidden="hidden">成员请 <a href='#head'>登录</a><br/>
+				或者，你可以尝试<a href='About.html#joinUS'>申请加入</a> 
+				</div>
+				<div id='switch'></div>
+				<div id='member'>
+					<div id='leftMe' class="devide">
+						<div class="memberDetail">学号：</div>
+						<div class="memberDetail">名字：</div>
+						<div class="memberDetail">方向：</div>
+						<!--<div class="memberDetail">从进入到离开：</div>-->
+
+						<div class="memberDetail">隶属于组别：</div>
+					</div>
+					<div id='rightMe' class="devide">
+						<div id='memberNumber' class="memberDetail">测试中</div>
+						<div id='memberName' class="memberDetail">Your Name</div>
+						<div id='memberDirection' class="memberDetail">JAVA</div>
+						<!--<div id='memberDate' class="memberDetail">2015-10~</div>-->
+						<div id='memberGroup' class="memberDetail">开阳</div>
+					</div>
+				</div>
+				<div id='border-bottom' class="meBoder"></div>
+			</div>
+			<div id='operate'>
+				<div id='modify_pass'class="operation">修改密码</div>
+				<div id='apply_exit' class="operation"></div>
+			</div>
+			<div class="UniversalAlert">以上功能除签到外都暂时不能用</div>
+		</div>
+        <div id='foot' class="row" th:include="foot :: copyright" ></div>
+	</body>
+</html>

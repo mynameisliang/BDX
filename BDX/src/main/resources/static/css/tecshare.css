@@ -1,0 +1,29 @@
+﻿#linuxTec{
+	margin-top: 100px;
+	margin-left: 10%;
+	width:31%;
+	float: left;
+	height: 800px;
+	border-right: 2px solid rgb(102,204,255);
+}
+#javaTec{
+	margin-top: 100px;
+	float: left;
+	width: 48%;
+	height: 390px;
+	border-bottom: 2px solid rgb(102,204,255);
+}
+#pythonTec{
+	float: left;
+	width: 48%;
+	height: 390px;
+}
+.bigBox{
+	font-size: 25px;
+	color: rgb(102,204,255);
+	padding: 10px;
+}
+.bigBox p{
+	font-size: 15px;
+	color: rgb(220,220,255);
+}

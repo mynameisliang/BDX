@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录</title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}" />
+    <link rel="icon" th:href="@{/img/compass.ico}">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/tools.js}"></script>
+<script type="text/javascript" th:src="@{/js/charger_login.js}"></script>
+<body>
+    <div id='logo' class="row">
+        <div id='img'></div>
+        <div id='pageTilte'>管&ensp;理&ensp;员&ensp;登&ensp;录</div>
+<a href="/page/index">转到主页</a>
+</div>
+    <div id="box" class="row">
+        <th:block th:if="${info!=null}"><h3 th:text="${info}"></h3></th:block>
+        <th:block th:if="${info==null}"><h3>&nbsp;</h3></th:block>
+
+<form action="/charger_login" method="post">
+<input id="account" name="account" type="text" class="in" required><label title="请输入账号" accesskey="账号" for="account"></label>
+            <input id="password" name="password" type="password" class="in" required><label title="请输入密码" accesskey="密码" for="password"></label>
+            <input type="submit" value="登录">
+        </form>
+    </div>
+    <div id="foot" class="row" th:include="foot :: #copyright"></div>
+</body>
+</html>

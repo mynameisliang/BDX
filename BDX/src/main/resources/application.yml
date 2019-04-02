@@ -1,0 +1,53 @@
+﻿spring:
+  datasource:
+
+    url: jdbc:mysql://localhost:3306/bdx?useSSL=false
+    username: root
+    password: 1078440909
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    mode: LEGACYHTML5 # 解决Thymeleaf的严格检查
+
+
+#    cache: false # 关闭页面缓存
+
+server:
+  port: 8888
+
+management:
+  address: 127.0.0.1
+  port: 8001
+  security:
+    roles: SUPERUSER
+    enabled: true # 是否开启安全限制
+
+endpoints:
+  mappings:
+    sensitive: false  #设置敏感信息
+
+  shutdown:
+    enabled: true #是否开启Actuator关闭操作
+    id: kill #重命名端点
+    sensitive: true #是否开启密码验证
+
+security:
+  user:
+    name: root
+    password: 1111111
+    role: SUPERUSER
+  basic:
+    enabled: false #关闭密码验证（但端点仍可以启用）
+
+
+info:
+  description: 北斗星官方网站
+  author: cloudy
+  email: itscloudy@foxmail.com
+  build:
+     name: BDX
+     version: 1.0.0
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+
+

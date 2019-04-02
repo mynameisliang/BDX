@@ -1,0 +1,59 @@
+<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>留言区 - 北斗星工作室</title>
+		<!--<link rel="stylesheet" href="css/main.css" />-->
+		<link rel="stylesheet" th:href="@{/css/message.css}" />
+		<link rel="icon" th:href="@{/img/compass.ico}">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/tools.js}"></script>
+		<script type="text/javascript" th:src="@{/js/base.js}" ></script>
+        <script type="text/javascript" th:src="@{/js/message.js}" ></script>
+	</head>
+	<body>
+        <div id='head' class="row" th:include="head"></div>
+		<div id='body' class="row">
+			<div id='messages' class="Outbox">
+				<div id='messageTitle'>已有留言：</div>
+				<div id='messageContent'>
+					<div>
+						暂时不能查看留言|Unable to browse messages now
+					</div>
+				</div>
+			</div>
+			<div id='addMessage' class="Outbox">
+				<div id='personChoose' class="SecondLevel">
+					<div id='TheChoose'>
+						<div id='member' class="personType">成员</div>
+						<div id='visitor' class="personType">访客</div>
+					</div>
+					<div id='visitorDO'>
+						<form>
+				 			<p>你的名字 | Your Name：</p>
+				 			<input type="text" id='name'/>
+				 			<p>QQ或微信 | QQ or WeChat：</p>
+				 			<input type="text" id='class'/>
+				 			<p>电话 | Phone Number：</p>
+				 			<input type="text" id='tel'/>
+				 			<p>电子邮箱 | E-mail：</p>
+				 			<input type="text" id='e-mail' />
+				 			<div id='alert'></div>
+				 		</form>
+				 		<div id='memberAlert' class="UniversalAlert" hidden="hidden">亲爱的星星，可以直接留言哦~</div>
+					</div>
+			 	</div>
+		 		<div id='upLoadMessage' class="SecondLevel">
+		 			<form>
+		 				<p><br/>请在这里留言|Leave your message here：</p>
+		 				<textarea id='newMessage'></textarea>
+		 				<input  id='submitMessage' type="button" value="提交" hidden="hidden" class="SubButton"/>
+		 				<input  id='clear' type="button" value="清空" hidden="hidden" class="SubButton"/>
+		 			</form>
+		 		</div>
+			</div>
+		</div>
+        <div id='foot' class="row" th:include="foot :: copyright" ></div>
+	</body>
+</html>

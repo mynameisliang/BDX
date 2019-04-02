@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+	
+	<settings>
+		<setting name="logImpl" value="LOG4J"/>
+		<!-- 二级缓存 -->
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
+	<!-- 类型注解器 -->
+	<!--<typeAliases>-->
+		<!--<typeAlias alias="user" type="com.entity.User"/>-->
+		<!--<typeAlias alias="employee" type="com.entity.Employee"/>-->
+		<!--&lt;!&ndash; <package name=""/>  &ndash;&gt;&lt;!&ndash; 在指定包名下查找 实体类可使用@Alias注解，来作为bean别名，没有注解默认为bean名首字母小写 &ndash;&gt;-->
+	<!--</typeAliases>-->
+	<!-- 数据库连接 -->
+	<!--<environments default="mysql">&lt;!&ndash; 名字不定 &ndash;&gt;-->
+		<!--<environment id="mysql">-->
+		<!--<transactionManager type="JDBC"></transactionManager>-->
+		<!--<dataSource type="POOLED">-->
+			<!--<property name="driver" value="com.mysql.jdbc.Driver"/>-->
+			<!--<property name="url" value="jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=true"/>-->
+			<!--<property name="username" value="root"/>-->
+			<!--<property name="password" value="1078440909"/>-->
+		<!--</dataSource>-->
+		<!--</environment>-->
+	<!--</environments>-->
+	<!--<mappers>-->
+		<!--&lt;!&ndash;<mapper resource="com/mapper/UserMapper.xml"/> &ndash;&gt;&lt;!&ndash; 其中有多个未定义的类 &ndash;&gt;-->
+		<!--<mapper resource="com/mapper/EmployeeMapper.xml"/> -->
+	<!--</mappers>-->
+</configuration>

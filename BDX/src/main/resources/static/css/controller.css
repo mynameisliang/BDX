@@ -1,0 +1,149 @@
+﻿*{
+	font-family: "微软雅黑";
+}
+body{
+	margin-left: -10px;
+	margin-top: 0px;
+}
+.row{
+	width: 100%;
+}
+#head{
+	height: 430px;
+	margin-top: -8px;
+}
+#logo{
+	overflow: hidden;
+	height: 180px;
+	background: linear-gradient(to right,rgb(255,255,255),rgb(120,150,255)) ;
+}
+#logo a{
+	font-size: 20px;
+	float: right;
+}
+#img{
+	height: 100%;
+	width: 400px;
+	background: url(../img/logo.png)  no-repeat;
+	background-size: 350px 180px;
+	background-position: 40px 15px;
+	float: left;
+}
+#pageTilte{
+	margin-top: 55px;
+	margin-left: 450px;
+	font-size: 50px;
+	color: rgb(102,255,204);
+}
+.boxTitle{
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	height: 40px;
+	color: rgb(255,255,255);
+	cursor: pointer;
+}
+/*.bigBox{
+	height: 420px;
+}*/
+.operation{
+	display: none;
+	width: 80%;
+	margin-left: 11%;
+	height: 380px;
+	margin-top: 20px;
+}
+/**
+ * 添加新闻
+ */
+#news{
+	border-top: 5px solid rgb(102,204,255);
+	background: rgb(200,255,255);
+}
+#news .boxTitle{
+	color: rgb(255,255,255);
+	border-bottom: 2px solid rgb(102,204,255);
+	background: linear-gradient(to bottom,rgb(102,204,255),rgb(200,255,255));
+}
+form{
+	width: 100%;
+	height: 380px;
+	font-size: 18px;
+	color: rgb(102,204,255);
+	
+}
+input[type='text'],textarea{
+	border: 1px solid rgb(102,204,255);
+	margin-top: 2px;
+	font-size: 18px;
+}
+input{
+	width: 42%;
+	height: 30px;
+}
+textarea{
+	width: 98.5%;
+	height: 240px;
+}
+input[type='button']{
+	width: 49.5%;
+	height: 50px;
+	margin-right: 0;
+	font-size: 18px;
+	color: rgb(102,204,255);
+}
+/**
+ * 留言处理
+ */
+#messages{
+	border-top: 5px solid rgb(255,204,102);
+	background: rgb(255,255,200);
+}
+#messages .boxTitle{
+	border-bottom: 2px solid rgb(255,204,102);
+	background: linear-gradient(to bottom,rgb(255,204,102),rgb(255,255,200));
+}
+/**
+ * 申请处理
+ */
+#apply{
+	border-top: 5px solid rgb(102,255,204);
+	background: rgb(200,255,255);
+}
+#apply .boxTitle{
+	border-bottom: 2px solid rgb(102,255,204);
+	background: linear-gradient(to bottom,rgb(102,255,204),rgb(200,255,255));
+}
+/**
+ * 成员管理
+ */
+#exit{
+	border-top: 5px solid rgb(255,153,153);
+	background: rgb(255,228,228);
+}
+#exit .boxTitle{
+	border-bottom: 2px solid rgb(255,153,153);
+	background: linear-gradient(to bottom,rgb(255,153,153),rgb(255,228,228));
+}
+/**
+ * 签到数据
+ */
+#sign{
+	border-top: 5px solid rgb(204,255,102);
+	background: rgb(255,255,200);
+}
+#sign .boxTitle{
+	border-bottom: 2px solid rgb(204,255,102);
+	background: linear-gradient(to bottom,rgb(204,255,102),rgb(255,255,200));
+}
+/**
+ * 数据监测
+ */
+#listen{
+	border-top: 5px solid rgb(102,102,102);
+	background: rgb(200,200,200);
+}
+#listen .boxTitle{
+	border-bottom: 2px solid rgb(102,102,102);
+	background: linear-gradient(to bottom,rgb(102,102,102),rgb(200,200,200));
+}

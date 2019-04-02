@@ -1,0 +1,148 @@
+﻿#body{
+	height: 1500px;
+}
+.littleTitle{
+	width:90%;
+	margin-left:5%;
+	text-align: center;
+	font-size: 26px;
+	color: rgb(120,120,255);
+	background: radial-gradient(circle farthest-side, #fff, rgb(120,120,255));
+}
+.RelContent{
+	color: rgb(255,255,255);
+	/*text-shadow: 0 0 10px rgb(230,255,255);*/
+	font-size: 20px;
+}
+.IntroduceText{
+	overflow: hidden;
+	width: 75%;
+	margin-left: 12.5%;
+	margin-top: 10px;
+}
+#introduce{
+	height: 165px;
+}
+#teamCulture{
+	height: 415px;
+}
+#contactUs{
+	height: 143px;
+}
+#joinUs{
+	height: 600px;
+}
+#joinUs .littleTitle{
+	color: rgb(255,255,255);
+	background: radial-gradient(circle farthest-side, rgb(102,0,255), rgb(120,120,255));
+}
+#form{
+	width:100%;
+}
+#joinUs form{
+	font-size: 20px;
+	margin-left: 10%;
+	color: rgb(255,255,255);
+}
+.shortText,.longText{
+	height: 30px;
+	color: rgb(50,50,255);
+	font-size: 18px;
+	border:2px inset rgb(255,255,255);
+	border-radius:12px;
+	box-shadow:0 0 20px rgb(80,80,255);
+	margin-top: 10px;
+}
+.shortText{
+	width: 25%;
+	background: linear-gradient(to left,rgba(250,250,250,0.6),rgba(180,180,255,0.6),rgba(250,250,250,0.6));
+}
+.longText{
+	width: 35%;
+	background: linear-gradient(to left,rgba(250,250,250,0.6),rgba(180,180,255,0.6),rgba(250,250,250,0.6));
+}
+#SubmitApply{
+	width: 30%;
+	height: 60px;
+	margin-top: 50px;
+	margin-left: 30.5%;
+	color: rgb(120,120,255);
+	background: rgb(255,255,255);
+	font-size: 18px;
+	box-shadow: 0 0 20px rgb(255,255,255);
+	border: none;
+	border-bottom: 3px solid rgb(0,0,255);
+	border-radius: 12px;
+	cursor:pointer;
+}
+#alert{
+	font-size:20px;
+	color:rgb(255,150,150);
+	height:20px;	
+	width:85%;
+}
+#alertOfJoin{
+	height: 25x;
+	width: 60%;
+	margin-left: 22%;
+	margin-top: 50px;
+	border-top: 2px solid rgb(180,200,255);
+	border-radius: 10px;
+	color: rgb(180,200,255);
+	font-size: 20px;
+}
+.noRequest{
+	text-align: center;
+	font-size:35px;
+	color: rgb(180,200,255);
+	width:100%;
+	height:100px;
+}
+a{
+	text-decoration: none;
+	color:rgb(120,0,255);
+}
+/**
+ * MEDIA
+ */
+#audio2{
+	width: 60%;
+	height: 30px;
+	color: white;
+	border-radius: 7px;
+	background: linear-gradient(to left,rgb(120,120,255),rgb(18,18,18));
+}
+#audio2 audio{
+	width: 50%;
+	height: 30px;
+	float: left;
+}
+#audio2 div{
+	width: 50%;
+	height: 30px;
+	float: left;
+	padding-top: 4px;
+}
+#audio1{
+	width: 100%;
+	height: 48%;
+	color: white;
+	background: linear-gradient(to left,rgb(120,120,255),black);
+}
+#audio1 video{
+	width: 35%;
+	height: 100%;
+	float: left;
+	box-shadow: 5px 5px 10px black;
+}
+#audio1 div{
+	color: white;
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+#audio1 p{
+	font-size: 20px;
+	height: 10px;
+}
+

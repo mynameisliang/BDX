@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>超级管理员</title>
+
+		<link rel="stylesheet" th:href="@{/css/charger.css}" />
+		<link rel="stylesheet" th:href="@{/css/_tooltip.css}"/>
+		<link rel="stylesheet" th:href="@{/css/_dropdown.css}"/>
+		<link rel="icon" th:href="@{/img/compass.ico}">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/tools.js}"></script>
+		<script type="text/javascript" th:src="@{/js/base.js}"></script>
+		<script type="text/javascript" th:src="@{/js/_tooltip.js}"></script>
+		<script type="text/javascript" th:src="@{/js/_dropdown.js}"></script>
+		<script type="text/javascript" th:src="@{/js/charger.js}" ></script>
+	</head>
+	<body>
+		<div id='logo' class="row">
+	 		<div id='img'></div>
+	 		<div id='pageTilte'>超&ensp;级&ensp;管&ensp;理&ensp;员&ensp;页</div>
+	 		<a th:href="@{/page/index}">转到主页</a>
+			<br><a th:href="@{/charger/logout}">注销</a>
+		</div>
+		<div id='box' class="row">
+			<!--<div id='chooser'> <!--描述：choose开辟了一块空间，供scroller滑动-->
+				<div id='scroller'>
+					<div class="choice">新闻管理<br/><div class="Textborder"></div></div>
+					<div class="choice">留言处理<br/><div class="Textborder"></div></div>
+					<div class="choice">申请处理<br/><div class="Textborder"></div></div>
+					<div class="choice">成员管理<br/><div class="Textborder"></div></div>
+					<div class="choice">数据中心<br/><div class="Textborder"></div></div>
+				</div>
+			<!--</div>-->
+			<div id='body' >
+				<div id='news' class="content">
+					<div class="boxTitle">新&ensp;闻&ensp;管&ensp;理</div>
+					<div class="operation">
+						<form>
+							标题(必填)：<input id='title' type="text"/>
+							关于：<input id='about' type="text"/><br />
+							内容(必填)：<textarea></textarea>
+							<input id="n_upload" type="button" value="确定上传"/>
+							<input id="n_clear"type="button" value="清空所有"/>
+							
+						</form>
+						<div id="NList"></div>
+					</div>
+				</div>
+				<div id='messages' class="content">
+					<div class="boxTitle">留&ensp;言&ensp;处&ensp;理</div>
+					<div class="operation">
+						<div id="Mchooser">
+							<div id='Mchoice1'>
+								访客 | Visitor
+							</div>
+							<div id='Mchoice2'>
+								成员 | Member
+							</div>
+						</div>
+						<div id="MList">
+						</div>
+						<div></div>
+						<div id='turnLeft' class="turn page"></div>
+				 		<div id='pageSign' class="page"></div>
+				 		<div id='turnRight' class="turn page"></div>
+					</div>
+				</div>
+				<div id='applys' class="content">
+					<div class="boxTitle">申&ensp;请&ensp;处&ensp;理</div>
+					<div class="operation">
+						
+					</div>
+				</div>
+				<div id='members' class="content">
+					<div class="boxTitle">成&ensp;员&ensp;管&ensp;理</div>
+					<div class="operation">
+						<div id='m_lists'>
+							<ul class="dropdown">
+								<li class="drop" ><a href="#">组别</a>
+									<ul class="sub_menu">
+										<li><a>TEST</a></li>
+									</ul>
+								</li>
+								<li class="drop" ><a href="#">姓名</a>
+									<ul class="sub_menu">
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="m_operate">
+							<button id="m_operate_delete">删除</button>
+							<button id="m_operate_modify">修改信息</button>
+						</div>
+						<hr>
+						<div id="m_add">
+
+						</div>
+					</div>
+				</div>
+				<div id='datas' class="content">
+					<div class="boxTitle">数&ensp;据&ensp;监&ensp;测</div>
+					<div class="operation">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

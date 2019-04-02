@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>关于我们  - 北斗星工作室</title>
+		<!--<link rel="stylesheet" th:href="@{/css/main.css}" />-->
+		<link rel="stylesheet" th:href="@{/css/about.css}" />
+		<link rel="icon" th:href="@{/img/compass.ico}">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/base.js}"></script>
+		<script type="text/javascript" th:src="@{/js/about.js}" ></script>
+	</head>
+	<body>
+    <div id='head' class="row" th:include="head"></div>
+		<div id='body' class="row">
+		 	<div id='introduce' class="IntroduceText">
+		 		<p class="littleTitle">我们的介绍</p>
+		 		<p class="RelContent">&emsp;&emsp;北斗星工作室是信工学院领导指导和建议下创建的软件开发小组，
+		 			经过几年发展，现在已经成为一个学习研究型的兴趣团队。现有近二十余名成员，5名指导老师。
+			 	工作室以软件设计为主要学习内容。通过设计自然语言信息处理方面的项目，
+			 	增强大家的专业知识面，开阔本领域的专业视野...</p>
+		 	</div>
+		 	<div id='teamCulture' class="IntroduceText">
+		 		<p class="littleTitle">团队文化</p>
+		 		<p class="RelContent">1.态度决定高度<br/>
+		 		2.崇德尚能。凡是小组成员，无论在任何时候，任何地点，严禁以颜值论能力，我们需要的是程序媛/猿，不是演员<br/>
+		 		3.知行合一。每人在桌边贴一张标签，书写今日任务<br/>
+		 		4.互相鼓励。没人一句口号/座右铭/个性签名，统一整理后贴到墙上或考勤表上<br/>
+		 		5.博采众长。知道创宇技能表,乃编程的至高内功心法<br/>
+		 		6.明确对象。指导学长学姐，以及内部竞争分组情况<br/>
+		 		7.兼容并包。在不干扰小组成员正常学习的情况下，准许带小组外成员进入小组学习，但是注意遇到任何财物损失或破坏学习氛围等情况
+		 		，此成员负全责<br/>
+		 		8.继往开来。要求，高年级做事情至少要低啊一个大一的去了解情况，把团队传承下去<br/>
+		 		9.及时反馈。作为团队的一份子，发现不良现象，应及时纠正此人或报告负责人处理</p>
+		 		<div id='audio2'>
+		 			<audio controls>
+			 			<source th:src="@{/media/GoTime.mp3}"/>
+			 		</audio>
+			 		<div>《GoTime》-Mark Petrie</div>
+		 		</div>
+		 	</div>
+		 	<div id='contactUs' class="IntroduceText">
+		 		<p class="littleTitle">联系我们</p>
+		 		<p class="RelContent">
+		 			&ensp;联系地址：
+		 			&nbsp;河南科技学院0#615
+		 			&ensp;电子邮箱：&ensp;内容等待补充……
+		 			&emsp;邮编：473400
+		 			<br />
+		 			&ensp;联系方式：&ensp;内容等待补充……
+		 			&emsp;内容等待补充……
+		 		</p>
+		 	</div>
+		 	<div id='joinUs' class="IntroduceText">
+		 		<p class="littleTitle">加入我们</p>
+		 		<div id='audio1'>
+				 	<video th:src="@{/media/something.mp4}" controls preload="auto" loop="loop"></video>
+				 	<div>
+				 		<p>《有些事现在不做 一辈子都不会做了》——五月天</p>
+				 		年轮里面有钟，皱纹里面有钟，就算暂停全世界的钟，也停不了一秒钟<br/>
+				 		跌到以后有痛，后悔以后有痛，问你最痛会是哪一种，答案说明所有<br/>
+				 		想象你的孙子、孙女，充满光的瞳孔，正等着你开口，等着你说，你最光辉的一次传说<br/>
+				 		每个平凡的自我，都曾幻想过，以你为名的小数，会是枯燥或是隽永<br/>
+				 		想象你的你的白发皱纹，紧贴你的轮廓，你最终的朋友，就是此刻，那些最疯、最爱和最痛<br/>
+				 		每次冲动留下的，都有所不同，然而有天你会懂，就是那些让你不同<br/>
+				 		每滴眼泪挣脱后，都带走懦弱，感动终在冲动后，苦涩回忆都会温柔<br/>
+				 		每个平凡的自我，都曾幻想过，然而大多的自我，都紧抓着某个理由<br/>
+				 		每个渺小的理由，都困住自由，有些事情还不做，你的理由会是什么
+				 	</div>
+			 	</div>
+		 		<div id='form'>
+		 			<form>
+		 			你的班级：<input type="text" class="shortText"/>
+		 			你的邮箱：<input type="text" class="longText"/><br />
+		 			你的姓名：<input type="text" class="shortText"/>
+		 			你的电话：<input type="text" class="longText"/><br />
+		 			<div id='alert'></div>
+		 			<input id='SubmitApply' type="button" value="提交申请" />
+		 			</form>
+			 		<div id='alertOfJoin'>
+			 			&emsp;&emsp;申请提交后你将在我们计划招新时间内收到以短信形式的通知
+			 		</div>
+					<div></div>
+		 		</div>
+		 	</div>
+		</div>
+        <div id='foot' class="row" th:include="foot :: copyright" ></div>
+	</body>
+</html>
